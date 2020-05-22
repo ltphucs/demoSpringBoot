@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/web/")
 public class CityWebAjaxController {
 
-    @GetMapping("/cities-ajax")git
+    @GetMapping("/cities-ajax")
     public String cities(Model model){
         return "/city/ajax-view/index";
     }
