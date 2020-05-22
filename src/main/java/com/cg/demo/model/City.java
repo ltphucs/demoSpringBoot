@@ -8,6 +8,7 @@ import javax.persistence.*;
 public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(columnDefinition = "bigserial")
     private Long id;
 
     private String name;

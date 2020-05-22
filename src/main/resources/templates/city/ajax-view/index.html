@@ -298,7 +298,7 @@
             <div class="modal-content">
                 <form name="formAddEdit" id="formAddEdit">
                     <div class="modal-header">
-                        <h4 class="modal-title">Add City</h4>
+                        <h4 class="modal-title" id="modalTitle" name="modalTitle">Add City</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
@@ -359,7 +359,7 @@
 
             },
             messages: {
-                name: "Please enter your cityName",
+                name: "Please enter your city name",
 
             }
         });
@@ -371,8 +371,6 @@
         var validator = $( "#formAddEdit" ).validate();
         validator.resetForm();
     }
-
-
 
     cities.get = function(id){
         $.ajax({

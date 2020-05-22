@@ -64,6 +64,7 @@ public class CityWebController {
 
         return modelAndView;
     }
+
     @GetMapping("/cities/delete/{id}")
     public ModelAndView showDeleteCity(@PathVariable long id){
         Optional<City> city = cityService.findById(id);
