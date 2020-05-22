@@ -22,13 +22,13 @@ public class CityWebController {
     public String cities(Model model){
         List<City> cities = cityService.findAll();
         model.addAttribute("cities",cities);
-        return "/city/index";
+        return "index";
     }
 
     @PostMapping("/cities/add")
     public ModelAndView addCity(@ModelAttribute City city){
         String message;
-        ModelAndView modelAndView = new ModelAndView("/city/add");
+        ModelAndView modelAndView = new ModelAndView("add");
         try {
             cityService.save(city);
             message="Add new success";modelAndView.addObject("error", "success");
@@ -45,7 +45,7 @@ public class CityWebController {
 
     @GetMapping("/cities/add")
     public ModelAndView showAddCity(){
-        ModelAndView modelAndView = new ModelAndView("/city/add");
+        ModelAndView modelAndView = new ModelAndView("add");
         modelAndView.addObject("city",new City());
         return modelAndView;
     }
@@ -54,7 +54,7 @@ public class CityWebController {
     public ModelAndView showEditCity(@PathVariable long id){
         Optional<City> city = cityService.findById(id);
         if (city.isPresent()){
-            ModelAndView modelAndView = new ModelAndView("/city/edit");
+            ModelAndView modelAndView = new ModelAndView("edit");
             modelAndView.addObject("city",city);
             return modelAndView;
         }
@@ -69,7 +69,7 @@ public class CityWebController {
     public ModelAndView showDeleteCity(@PathVariable long id){
         Optional<City> city = cityService.findById(id);
         if (city.isPresent()){
-            ModelAndView modelAndView = new ModelAndView("/city/delete");
+            ModelAndView modelAndView = new ModelAndView("delete");
             modelAndView.addObject("city",city.get());
             return modelAndView;
         }
@@ -83,7 +83,7 @@ public class CityWebController {
     @PostMapping("/cities/edit")
     public ModelAndView editCity(@ModelAttribute City city){
         String message;
-        ModelAndView modelAndView = new ModelAndView("/city/add");
+        ModelAndView modelAndView = new ModelAndView("add");
         try {
             cityService.save(city);
             message="<strong>Success!</strong> Your city has been update successfully..";
@@ -107,7 +107,7 @@ public class CityWebController {
         }catch (Exception ex){
             message="<strong>Error!</strong> Your city has been update error..";
 
-            ModelAndView modelAndView = new ModelAndView("/city/delete");
+            ModelAndView modelAndView = new ModelAndView("delete");
             modelAndView.addObject("error", "error");
             modelAndView.addObject("city",city);
             modelAndView.addObject("message", message);
