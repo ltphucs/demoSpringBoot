@@ -14,7 +14,7 @@ public class CityWebAjaxController {
 
     @GetMapping("/cities-ajax")
     public String cities(Model model){
-        return "/city/ajax-view/index";
+        return "city/ajax-view/index";
     }
 
 }

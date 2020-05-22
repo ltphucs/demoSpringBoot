@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d9cfb27-a4a8-432c-bfa3-904f6e87ae53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/city/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/city/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/city/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/city/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebAjaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebAjaxController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1686">
+            <state relative-caret-position="1315">
               <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebAjaxController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/city/edit.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/city/delete.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/city/ajax/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebAjaxController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/city/ajax-view/index.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cg/demo/model/City.java" />
@@ -182,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebAjaxController.java" />
       </list>
     </option>
   </component>
@@ -495,12 +491,12 @@
       <workItem from="1586155045263" duration="526000" />
       <workItem from="1587458329246" duration="261000" />
       <workItem from="1589962978960" duration="3111000" />
-      <workItem from="1590049515372" duration="3488000" />
+      <workItem from="1590049515372" duration="3520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32375000" />
+    <option name="totallyTimeSpent" value="32407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-67" width="1920" height="1080" extended-state="0" />
@@ -690,16 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebAjaxController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4539">
@@ -731,8 +717,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1686">
+        <state relative-caret-position="1315">
           <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cg/demo/controller/web/CityWebAjaxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
